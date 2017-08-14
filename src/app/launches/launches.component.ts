@@ -11,7 +11,7 @@ export class LaunchesComponent implements OnInit {
   constructor(private launchesService: LaunchesService) { }
 
   ngOnInit() {
-    this.launchesService.getNextTen()
+    this.launchesService.getNext(10)
   }
 
 }
