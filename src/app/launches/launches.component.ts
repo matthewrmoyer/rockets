@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LaunchesService } from '../launches.service';
 
 @Component({
   selector: 'app-launches',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LaunchesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private launchesService: LaunchesService) { }
 
   ngOnInit() {
+    this.launchesService.getNextTen()
   }
 
 }
