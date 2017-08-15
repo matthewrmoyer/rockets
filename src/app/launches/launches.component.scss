@@ -1,13 +1,11 @@
-p { 
-    color: orangered;
-}
-
 .launch-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 50vh;
+    min-height: 70vh;
 }
+
 .launch{
     border: 2px solid orangered;
+    margin-top: 20px;
 }
