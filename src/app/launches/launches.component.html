@@ -2,9 +2,22 @@
   launches works!
 </p>
 
-<div class= "launch-container">
-  <div *ngFor="let launch of launchList" class = "launch">
+<div class="launch-container">
+  <div *ngFor="let launch of launchList" class="launch">
     <h1>{{launch.name}}</h1>
     <h3>{{launch.location.name}}</h3>
+    <md-card>
+      <button md-button>FLAT</button>
+      <button md-raised-button>RAISED</button>
+      <button md-raised-button color="primary">PRIMARY</button>
+      <button md-raised-button color="accent">ACCENT</button>
+      <button md-raised-button color="warn">WARN</button>
+      
+      <md-button-toggle>Toggle me!</md-button-toggle>
+
+      <md-icon class="md-24">add</md-icon>
+      <md-icon class="md-24">favorite</md-icon>
+
+    </md-card>
   </div>
 </div>
