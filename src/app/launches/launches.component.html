@@ -2,7 +2,9 @@
   launches works!
 </p>
 
-<ul *ngFor='let launch of launches'>
-  <li>{{launch.name}}</li>
-  <li>{{launch.location.name}}</li>
-</ul>
+<div class= "launch-container">
+  <div *ngFor="let launch of launchList" class = "launch">
+    <h1>{{launch.name}}</h1>
+    <h3>{{launch.location.name}}</h3>
+  </div>
+</div>
