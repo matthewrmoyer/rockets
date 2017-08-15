@@ -10,12 +10,14 @@ import 'hammerjs';
 import appRoutes from './app.routes'
 import {LaunchesService} from './launches.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SideNavbarComponent } from './side-navbar/side-navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    SideNavbarComponent,
   ],
   imports: [
     BrowserModule,

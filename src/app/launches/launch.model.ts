@@ -13,8 +13,10 @@ export class Launch {
         public failReason,
         public location: object,
         public missions: object[],
-        public rocket: object,
+        public rocket: any,
     ) {
+        console.log(this.rocket)
+        console.log(this.rocket.imageURL)
         const duplicate = Launch.launchList.find(dup => {
             return dup.id === this.id;
         })

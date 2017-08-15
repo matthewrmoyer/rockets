@@ -1,20 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MdButtonModule, MdButtonToggleModule,  MdMenuModule, MdCheckboxModule, MdCardModule, MdIconModule} from '@angular/material';
+// tslint:disable-next-line:max-line-length
+import {MdCardModule, MdToolbarModule, MdSidenavModule, MdButtonModule, MdButtonToggleModule,  MdMenuModule, MdCheckboxModule, MdIconModule} from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
+    MdCardModule,
+    MdToolbarModule,
+    MdSidenavModule,
     MdButtonModule,
     MdButtonToggleModule,
     MdMenuModule,
     MdCheckboxModule,
+    MdIconModule
   ],
   exports: [
+    MdCardModule,
+    MdToolbarModule,
+    MdSidenavModule,
     MdButtonModule,
     MdButtonToggleModule,
     MdMenuModule,
     MdCheckboxModule,
+    MdIconModule
   ],
   declarations: []
 })

@@ -1,11 +1,22 @@
+* {
+    // color: red;
+}
 .launch-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     min-height: 70vh;
+    line-height: 1.5;
 }
 
-.launch{
-    border: 2px solid orangered;
-    margin-top: 20px;
+.launch-card{
+    width: 70vw;
+    margin-bottom: 20px;
+}
+
+.avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }

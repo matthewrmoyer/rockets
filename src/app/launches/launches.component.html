@@ -1,23 +1,27 @@
-<div class="launch-container">
+<div class="launch-container mat-typography">
   <div *ngFor="let launch of launchList" class="launch">
-    <h1>{{launch.name}}</h1>
-    <h3>{{launch.location.name}}</h3>
-    <div *ngFor="let mission of launch.missions">
-      <h4>Mission Name: {{mission.name}}</h4>
-      <h5>Mission Type: {{mission.typeName}}</h5>
-      <p>Mission Description: {{mission.description}}</p>
-    </div>
-    <md-card>
-      <button md-button>FLAT</button>
-      <button md-raised-button>RAISED</button>
-      <button md-raised-button color="primary">PRIMARY</button>
-      <button md-raised-button color="accent">ACCENT</button>
-      <button md-raised-button color="warn">WARN</button>
+    <md-card class = "launch-card">
+      <md-card-header>
+        <div md-card-avatar>
+          <img class = "avatar-image" src={{launch.rocket.imageURL}} alt="">
+        </div>
+        <md-card-title>{{launch.name}}</md-card-title>
+        <md-card-subtitle>{{launch.location.name}}</md-card-subtitle>
+      </md-card-header>
+  <img md-card-image src={{launch.rocket.imageURL}}>
+      <md-card-content>
+        <div *ngFor="let mission of launch.missions">
+          <h4>Mission Name: {{mission.name}}</h4>
+          <h5>Mission Type: {{mission.typeName}}</h5>
+          <p>Mission Description: {{mission.description}}</p>
+        </div>
+      </md-card-content>
 
-      <!--<md-button-toggle>Toggle me!</md-button-toggle>-->
-
-      <md-icon class="md-24">add</md-icon>
-      <md-icon class="md-24">favorite</md-icon>
+      <md-card-actions>
+        <button md-raised-button color="primary">LIKE</button>
+        <button md-raised-button color="accent">FAVORITE</button>
+        <button md-raised-button color="warn">SHARE</button>
+      </md-card-actions>
 
     </md-card>
   </div>
