@@ -1,12 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import {MdButtonModule, MdButtonToggle, MdCheckboxModule, MdCardModule, MdIconModule} from '@angular/material';
-import 'hammerjs';
+import {MdButtonModule, MdButtonToggleModule,  MdMenuModule, MdCheckboxModule, MdCardModule, MdIconModule} from '@angular/material';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MdButtonModule,
+    MdButtonToggleModule,
+    MdMenuModule,
+    MdCheckboxModule,
+  ],
+  exports: [
+    MdButtonModule,
+    MdButtonToggleModule,
+    MdMenuModule,
+    MdCheckboxModule,
   ],
   declarations: []
 })

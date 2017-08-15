@@ -1,20 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LaunchesComponent } from './launches.component';
+
 import launchesRoutes from './launches.routes';
+import { LaunchesComponent } from './launches.component';
 
-// refactor material stuff into its own module
-import {MdButtonModule, MdButtonToggleModule, MdCheckboxModule, MdCardModule, MdIconModule} from '@angular/material';
-
+import { CustomAngularMaterialModule } from '../custom-angular-material/custom-angular-material.module'
 
 @NgModule({
   imports: [
     CommonModule,
-    MdButtonModule,
-    MdButtonToggleModule,
-    MdCheckboxModule,
-    MdCardModule,
-    MdIconModule,
+    CustomAngularMaterialModule,
     launchesRoutes
   ],
   declarations: [LaunchesComponent]

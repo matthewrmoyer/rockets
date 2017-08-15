@@ -11,6 +11,7 @@ import appRoutes from './app.routes'
 import {LaunchesService} from './launches.service';
 import { NavbarComponent } from './navbar/navbar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserModule,
     CustomAngularMaterialModule,
     BrowserAnimationsModule,
-    // refactor all material design stuff into own module... https://material.angular.io/guide/getting-started
     appRoutes
   ],
   providers: [LaunchesService],
