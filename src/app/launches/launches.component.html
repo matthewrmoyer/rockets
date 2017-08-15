@@ -1,3 +1,8 @@
 <p>
   launches works!
 </p>
+
+<ul *ngFor='let launch of launches'>
+  <li>{{launch.name}}</li>
+  <li>{{launch.location.name}}</li>
+</ul>

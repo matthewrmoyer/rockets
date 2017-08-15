@@ -1,6 +1,6 @@
 export class Launch {
     static instances = 0;
-    static launchList: Launch[]
+    static launchList= []
     constructor(
         public id: number,
         public name: string,
