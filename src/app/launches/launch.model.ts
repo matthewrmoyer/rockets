@@ -15,7 +15,6 @@ export class Launch {
         public missions: object[],
         public rocket: any,
     ) {
-        console.log(this.streamUrls[0])
         const duplicate = Launch.launchList.find(dup => {
             return dup.id === this.id;
         })
@@ -23,5 +22,6 @@ export class Launch {
             Launch.instances++
             Launch.launchList.push(this)
         }
+        console.log(Launch.launchList)
     }
 }

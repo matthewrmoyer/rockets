@@ -2,10 +2,13 @@
   <div *ngFor="let launch of launchList" class="launch">
     <md-card class="launch-card">
       <md-card-header>
-        <div md-card-avatar>
-          <img class="avatar-image" src={{launch.rocket.imageURL}} alt="">
-        </div>
-        <md-card-title>{{launch.name}}</md-card-title>
+        <md-card-title>
+          <div md-card-avatar>
+            <img class="avatar-image" src={{launch.rocket.imageURL}} alt="">
+          </div>
+          <div>{{launch.name}}</div>
+          <div>&nbsp;</div>
+        </md-card-title>
         <md-card-subtitle>Scheduled to launch on {{launch.windowStart}} near {{launch.location.name}}</md-card-subtitle>
         <md-card-subtitle>
           <div *ngIf="launch.streamUrls.length > 0">
