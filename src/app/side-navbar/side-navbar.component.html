@@ -1,4 +1,4 @@
-<md-toolbar>
+<!--<md-toolbar>
   <span>First Row</span>
 
   <md-toolbar-row>
@@ -8,4 +8,14 @@
   <md-toolbar-row>
     <span>Third Row</span>
   </md-toolbar-row>
+
+  
+</md-toolbar>-->
+
+<md-toolbar *ngFor="let launch of launchList">
+
+  <md-toolbar-row>
+    <a href="">{{launch.name}}</a>
+  </md-toolbar-row>
+  
 </md-toolbar>

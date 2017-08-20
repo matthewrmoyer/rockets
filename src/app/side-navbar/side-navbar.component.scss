@@ -1,3 +1,8 @@
 md-toolbar{
-    height: 100vh;
+    // height: 200px;
+    max-width: 20vw;
+}
+md-toolbar-row {
+    margin-top: 0;
+    margin-bottom: 0;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Launch} from '../launches/launch.model'
 
 @Component({
   selector: 'app-side-navbar',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavbarComponent implements OnInit {
 
+  launchList;
   constructor() { }
 
   ngOnInit() {
+    console.log(Launch.launchList)
+    this.launchList = Launch.launchList
   }
 
 }
