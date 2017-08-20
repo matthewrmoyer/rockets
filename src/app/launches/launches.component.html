@@ -8,7 +8,10 @@
         <md-card-title>{{launch.name}}</md-card-title>
         <md-card-subtitle>{{launch.location.name}}</md-card-subtitle>
       </md-card-header>
-  <img md-card-image src={{launch.rocket.imageURL}}>
+      <!--<div class="rocket-image-wrapper">-->
+  <!--<img class = "rocket-image" src={{launch.rocket.imageURL}}>-->
+  <div class = "rocket-image" [ngStyle]="{ 'background-image': 'url(' + launch.rocket.imageURL + ')'}"></div>
+  <!--</div>-->
       <md-card-content>
         <div *ngFor="let mission of launch.missions">
           <h4>Mission Name: {{mission.name}}</h4>

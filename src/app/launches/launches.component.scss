@@ -1,6 +1,7 @@
 * {
     // color: red;
 }
+
 .launch-container {
     display: flex;
     flex-direction: column;
@@ -19,4 +20,25 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+// .rocket-image-wrapper{
+//     height: 300px;
+// }
+
+
+// .rocket-image {
+//     min-height: 200px;
+//     max-height: 300px;
+//     height: auto;
+//     max-width: 90%;
+//     opacity: .5;
+// }
+
+.rocket-image {
+    height: 0;
+    padding-bottom: 35%; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
