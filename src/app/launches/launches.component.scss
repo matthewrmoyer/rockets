@@ -9,6 +9,8 @@
     align-items: center;
     min-height: 70vh;
     line-height: 1.5;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .launch-card{
@@ -21,19 +23,6 @@
     height: 40px;
     border-radius: 50%;
 }
-
-// .rocket-image-wrapper{
-//     height: 300px;
-// }
-
-
-// .rocket-image {
-//     min-height: 200px;
-//     max-height: 300px;
-//     height: auto;
-//     max-width: 90%;
-//     opacity: .5;
-// }
 
 .rocket-image {
     height: 0;
