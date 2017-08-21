@@ -14,6 +14,7 @@ export class Launch {
         public location: object,
         public missions: object[],
         public rocket: any,
+        public easyLink: string
     ) {
         const duplicate = Launch.launchList.find(dup => {
             return dup.id === this.id;

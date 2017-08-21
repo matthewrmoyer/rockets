@@ -11,11 +11,11 @@
 
   
 </md-toolbar>-->
-
-<md-toolbar *ngFor="let launch of launchList">
-
-  <md-toolbar-row>
-    <a href="/launches#{{launch.name}}">{{launch.name}}</a>
+<div *ngIf = "windowWidth > 600">
+  <md-toolbar class = "sidenav" *ngFor="let launch of launchList">
+  <md-toolbar-row  class = "sidenav">
+    <a href="/launches#{{launch.name}}">{{launch.easyLink}}</a>
+    {{launch.asdf}}
   </md-toolbar-row>
-  
 </md-toolbar>
+</div>

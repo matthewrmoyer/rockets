@@ -27,6 +27,8 @@ export class LaunchesComponent implements OnInit {
   createLaunches(launches: any[]): Launch[] {
     const tempLaunchArray = []
     launches.forEach(launch => {
+      const ln = launch.name
+      const el = ln.substr(ln.indexOf('|') + 2)
       const {
         id,
         name,
@@ -39,10 +41,10 @@ export class LaunchesComponent implements OnInit {
         failreason: failReason,
         location,
         missions,
-        rocket
+        rocket,
       } = launch
       // tslint:disable-next-line:max-line-length
-      const newLaunch = new Launch(id, name, windowStart, windowEnd, streamUrls, infoUrls, status, holdReason, failReason, location, missions, rocket)
+      const newLaunch = new Launch(id, name, windowStart, windowEnd, streamUrls, infoUrls, status, holdReason, failReason, location, missions, rocket, el || name)
     })
     this.launchList = Launch.launchList
     return this.launchList
