@@ -49,7 +49,7 @@ export class LaunchesComponent implements OnInit {
   }
 
   async ngOnInit() {
-    await this.getLaunches(5)
+    await this.getLaunches(2)
     await this.createLaunches(this.launches)
     console.log(this.launchList)
   }
