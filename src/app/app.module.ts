@@ -11,13 +11,15 @@ import appRoutes from './app.routes'
 import {LaunchesService} from './launches.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SideNavbarComponent } from './side-navbar/side-navbar.component';
+// import { RocketCalendarComponent } from './rocket-calendar/rocket-calendar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SideNavbarComponent,
+    SideNavbarComponent
+    // RocketCalendarComponent,
   ],
   imports: [
     BrowserModule,
