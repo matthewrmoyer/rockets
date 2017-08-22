@@ -3,9 +3,13 @@ md-toolbar {
     justify-content: space-between;
 }
 
+.fill {
+    flex-grow: 1;
+}
+
 #first-nav-item {
     margin-left: 10px;
 }
 .nav-item {
-    margin-left: 100px;
+    margin-right: 10px;
 }

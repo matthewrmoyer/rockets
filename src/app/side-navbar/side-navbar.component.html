@@ -1,21 +1,7 @@
-<!--<md-toolbar>
-  <span>First Row</span>
-
-  <md-toolbar-row>
-    <span>Second Row</span>
-  </md-toolbar-row>
-
-  <md-toolbar-row>
-    <span>Third Row</span>
-  </md-toolbar-row>
-
-  
-</md-toolbar>-->
 <div *ngIf = "windowWidth > 600">
   <md-toolbar class = "sidenav" *ngFor="let launch of launchList">
   <md-toolbar-row  class = "sidenav">
     <a href="/launches#{{launch.name}}">{{launch.easyLink}}</a>
-    {{launch.asdf}}
   </md-toolbar-row>
 </md-toolbar>
 </div>
