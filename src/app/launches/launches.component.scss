@@ -6,9 +6,14 @@ a {
     text-decoration: none;
 }
 
+.fill {
+    width: 0;
+    margin-top: 100px; 
+}
 .launch-side-navbar-container {
     display: flex;
-    width: 80vw;
+    justify-content: space-between;
+    width: 100vw;
 }
 
 .launch-container {
@@ -18,8 +23,7 @@ a {
     align-items: center;
     min-height: 70vh;
     line-height: 1.5;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .launch-card{
