@@ -1,6 +1,15 @@
 * {
     // color: red;
 }
+.launch-side-navbar-container {
+    display: flex;
+    width: 80vw;
+}
+
+app-side-navbar {
+    background-color: orangered;
+    min-height: 100vh;
+}
 
 .launch-container {
     display: flex;
@@ -14,7 +23,8 @@
 }
 
 .launch-card{
-    width: 70vw;
+    text-align: center;
+    width: 60vw;
     margin-bottom: 20px;
 }
 
