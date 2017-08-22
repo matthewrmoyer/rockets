@@ -6,6 +6,8 @@ import { CustomAngularMaterialModule } from './custom-angular-material/custom-an
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 // import {MdButtonModule, MdButtonToggle, MdCheckboxModule, MdCardModule, MdIconModule} from '@angular/material';
 import 'hammerjs';
+import { CalendarModule } from 'angular-calendar';
+
 
 import appRoutes from './app.routes'
 import {LaunchesService} from './launches.service';
@@ -25,7 +27,7 @@ import { SideNavbarComponent } from './side-navbar/side-navbar.component';
     BrowserModule,
     CustomAngularMaterialModule,
     BrowserAnimationsModule,
-    appRoutes
+    appRoutes,
   ],
   providers: [LaunchesService],
   bootstrap: [AppComponent]
