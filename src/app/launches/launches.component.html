@@ -9,29 +9,27 @@
             <div md-card-avatar>
               <img class="avatar-image" src={{launch.rocket.imageURL}} alt="">
             </div>
-            <div>{{launch.name}}</div>
+            <h2 class = "mat-h2">{{launch.name}}</h2>
             <div>&nbsp;</div>
           </md-card-title>
-          <md-card-subtitle>Scheduled to launch on {{launch.windowStart}} near {{launch.location.name}}</md-card-subtitle>
-          <md-card-subtitle>
-            <div *ngIf="launch.streamUrls.length > 0">
-              <a href="{{launch.streamUrls}}">Watch it live!</a>
-            </div>
-          </md-card-subtitle>
+          <md-card-subtitle class = "md-headline">Scheduled to launch on {{launch.windowStart}} near {{launch.location.name}}</md-card-subtitle>
         </md-card-header>
         <div class="rocket-image" [ngStyle]="{ 'background-image': 'url(' + launch.rocket.imageURL + ')'}"></div>
         <md-card-content>
           <div *ngFor="let mission of launch.missions">
-            <h4>Mission Name: {{mission.name}}</h4>
-            <h5>Mission Type: {{mission.typeName}}</h5>
-            <p>Mission Description: {{mission.description}}</p>
+            <h4 class="mat-h4"> Mission Type: {{mission.typeName}} Mission Name: {{mission.name}}</h4>
+            <div class="md-body-1">Mission Description: {{mission.description}}</div>
           </div>
         </md-card-content>
-        <md-card-actions>
-          <button md-raised-button color="primary">Get Notifications</button>
-          <button md-raised-button color="accent">FAVORITE</button>
-          <button md-raised-button color="warn">SHARE</button>
-        </md-card-actions>
+        <div class="button-group"> 
+          <button class="md-card-action" md-raised-button color="primary">
+            <md-icon>notifications none</md-icon>
+          </button>
+          <a class="md-card-action" *ngIf="launch.streamUrls.length > 0" href="{{launch.streamUrls}}">
+            <button md-raised-button color="accent"><md-icon>tv live</md-icon></button>
+          </a>
+          <button class="md-card-action" md-raised-button color="primary"><md-icon>share</md-icon></button>
+        </div>
       </md-card>
     </div>
   </div>

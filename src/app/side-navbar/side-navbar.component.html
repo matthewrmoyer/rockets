@@ -1,7 +1,7 @@
-<div *ngIf = "windowWidth > 600">
-  <md-toolbar class = "sidenav" *ngFor="let launch of launchList">
-  <md-toolbar-row  class = "sidenav">
-    <a href="/launches#{{launch.name}}">{{launch.easyLink}}</a>
-  </md-toolbar-row>
-</md-toolbar>
+<div *ngIf="windowWidth > 600">
+  <md-toolbar class="sidenav">
+    <md-toolbar-row *ngFor="let launch of launchList" class="sidenav">
+      <a href="/launches#{{launch.name}}">{{launch.easyLink}}</a>
+    </md-toolbar-row>
+  </md-toolbar>
 </div>

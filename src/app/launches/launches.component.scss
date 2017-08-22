@@ -1,14 +1,14 @@
 * {
     // color: red;
 }
+
+a {
+    text-decoration: none;
+}
+
 .launch-side-navbar-container {
     display: flex;
     width: 80vw;
-}
-
-app-side-navbar {
-    background-color: orangered;
-    min-height: 100vh;
 }
 
 .launch-container {
@@ -37,12 +37,17 @@ md-card-header {
 md-card-title {
     display: flex;
     justify-content: space-between;
-    md-card-avatar {
-        // position: absolute;
-        // margin-left: 0;
-    }
 }
 
+// md-card-actions {
+//     display: flex;
+//     justify-content: flex-end;
+//     // background-color: red;
+// }
+// .md-card-action {
+//     margin-left: 0px;
+//     margin-right: 0px;
+// }
 .avatar-image {
     width: 40px;
     height: 40px;
@@ -56,3 +61,4 @@ md-card-title {
     background-size: contain;
     background-position: center center;
 }
+

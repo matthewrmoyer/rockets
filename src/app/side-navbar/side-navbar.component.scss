@@ -1,9 +1,12 @@
 md-toolbar{
-    // height: 200px;
     min-width: 150px;
     max-width: 20vw;
     margin-right: 10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
 }
+
 md-toolbar-row {
     margin-top: 0;
     margin-bottom: 0;
