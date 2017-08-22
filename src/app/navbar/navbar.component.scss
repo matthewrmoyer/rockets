@@ -1,6 +1,16 @@
 md-toolbar {
     display: flex;
     justify-content: space-between;
+    i {
+        font-size: calc(14px + 1.5vw);
+        margin-right: calc(10px + 1vw);
+    }
+}
+
+.nav-item {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 .fill {
@@ -9,9 +19,6 @@ md-toolbar {
 
 #first-nav-item {
     margin-left: 10px;
+    font-size: calc(20px + 2vw);
 }
-.nav-item {
-    margin-right: 10px;
-    color: white;
-    text-decoration: none;
-}
+
