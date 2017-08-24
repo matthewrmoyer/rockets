@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // tslint:disable-next-line:max-line-length
 import {MdCardModule, MdToolbarModule, MdSidenavModule, MdButtonModule, MdButtonToggleModule,  MdMenuModule, MdCheckboxModule, MdIconModule} from '@angular/material';
-import { ReactiveFormsModule } from '@angular/forms';  // <-- #1 import module
+// import { ReactiveFormsModule } from '@angular/forms';  // <-- #1 import module
 
 
 @NgModule({
@@ -16,7 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';  // <-- #1 import module
     MdMenuModule,
     MdCheckboxModule,
     MdIconModule,
-    ReactiveFormsModule
+    // ReactiveFormsModule
   ],
   exports: [
     MdCardModule,
@@ -27,7 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';  // <-- #1 import module
     MdMenuModule,
     MdCheckboxModule,
     MdIconModule,
-    ReactiveFormsModule
+    // ReactiveFormsModule
   ],
   declarations: []
 })
