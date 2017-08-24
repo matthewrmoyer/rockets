@@ -5,12 +5,7 @@
 .side-navbar-wrapper {
     display: flex;
     flex-direction: column;
-    background: orange;
-}
-
-app-side-navbar {
-    flex-grow: 1;
-    background: #F5F5F5;
+    margin-left: -8px; 
 }
 
 a {

@@ -1,15 +1,9 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    // background-color: red;
     min-height: 100vh;
 }
 .sidenav-content-container {
     flex-grow: 1;
     display: flex;
-}
-
-app-side-navbar {
-    // height: 100vh;
-    background: orange;
 }
