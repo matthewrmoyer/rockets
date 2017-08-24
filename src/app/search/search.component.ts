@@ -12,6 +12,7 @@ import { FormControl } from '@angular/forms';
 })
 export class SearchComponent implements OnInit {
   searchTerm = new FormControl()
+  options = ['ORS-5', 'Alcomsat-1']
   constructor() { }
 
   ngOnInit() {

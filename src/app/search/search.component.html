@@ -1,1 +1,11 @@
-<input class="form-control" [formControl]="searchTerm">
+<!--<input class="form-control" [formControl]="searchTerm">-->
+
+<md-input-container>
+   <input type="text" mdInput [formControl]="searchTerm" [mdAutocomplete]="auto">
+</md-input-container>
+
+<md-autocomplete #auto="mdAutocomplete">
+   <md-option *ngFor="let option of options" [value]="option">
+      {{ option }}
+   </md-option>
+</md-autocomplete>

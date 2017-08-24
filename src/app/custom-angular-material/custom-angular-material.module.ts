@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import {MdCardModule, MdToolbarModule, MdSidenavModule, MdButtonModule, MdButtonToggleModule,  MdMenuModule, MdCheckboxModule, MdIconModule} from '@angular/material';
 // import { ReactiveFormsModule } from '@angular/forms';  // <-- #1 import module
 
+import {MdAutocompleteModule} from '@angular/material';
+
+
 
 @NgModule({
   imports: [
@@ -17,6 +20,7 @@ import {MdCardModule, MdToolbarModule, MdSidenavModule, MdButtonModule, MdButton
     MdCheckboxModule,
     MdIconModule,
     // ReactiveFormsModule
+    MdAutocompleteModule
   ],
   exports: [
     MdCardModule,
@@ -28,6 +32,7 @@ import {MdCardModule, MdToolbarModule, MdSidenavModule, MdButtonModule, MdButton
     MdCheckboxModule,
     MdIconModule,
     // ReactiveFormsModule
+    MdAutocompleteModule
   ],
   declarations: []
 })
