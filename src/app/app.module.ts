@@ -6,7 +6,7 @@ import { CustomAngularMaterialModule } from './custom-angular-material/custom-an
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import 'hammerjs';
 
-import { CalendarModule } from 'angular-calendar';
+// import { CalendarModule } from 'angular-calendar';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
