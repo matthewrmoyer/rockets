@@ -1,6 +1,7 @@
 export class Launch {
     static instances = 0;
     static launchList = []
+    static easyLinks = []
     constructor(
         public id: number,
         public name: string,
@@ -22,6 +23,7 @@ export class Launch {
         if (!duplicate) {
             Launch.instances++
             Launch.launchList.push(this)
+            Launch.easyLinks.push(this.easyLink)
         }
         console.log(Launch.launchList)
     }

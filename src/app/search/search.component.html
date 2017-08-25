@@ -5,7 +5,7 @@
 </md-input-container>
 
 <md-autocomplete #auto="mdAutocomplete">
-   <md-option *ngFor="let option of filteredOptions | async" [value]="option">
-      {{ option }}
+   <md-option *ngFor="let option of filteredOptions | async" [value]="option.easyLink">
+      {{ option.easyLink }}
    </md-option>
 </md-autocomplete>

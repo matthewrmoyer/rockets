@@ -30,6 +30,7 @@ export class SideNavbarComponent implements OnInit {
   }
 
   ngOnInit() {
+    // refactor to import data from launch service
     this.launchList = Launch.launchList
   }
 
