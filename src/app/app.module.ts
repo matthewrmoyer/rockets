@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-
-// import { CustomAngularMaterialModule } from './custom-angular-material/custom-angular-material.module'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import 'hammerjs';
 
@@ -29,7 +27,6 @@ import { SearchComponent } from './search/search.component';
   ],
   imports: [
     BrowserModule,
-    // CustomAngularMaterialModule,
     SharedModule,
     BrowserAnimationsModule,
     appRoutes,
