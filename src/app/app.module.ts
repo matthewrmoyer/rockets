@@ -10,6 +10,9 @@ import 'hammerjs';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
+import { SharedModule } from './shared/shared.module'
+
+
 import appRoutes from './app.routes'
 import {LaunchesService} from './launches.service';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -27,6 +30,7 @@ import { SearchComponent } from './search/search.component';
   imports: [
     BrowserModule,
     CustomAngularMaterialModule,
+    SharedModule,
     BrowserAnimationsModule,
     appRoutes,
     ReactiveFormsModule
