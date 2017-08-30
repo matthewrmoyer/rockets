@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
-import { CustomAngularMaterialModule } from '../custom-angular-material/custom-angular-material.module'
+import { SharedModule } from '../shared/shared.module'
 
 import { Launch } from '../launches/launch.model'
 
